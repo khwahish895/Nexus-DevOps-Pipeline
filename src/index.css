@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+  --font-serif: "Georgia", serif;
+
+  --color-tech-bg: #E4E3E0;
+  --color-tech-ink: #141414;
+  --color-tech-line: #141414;
+  --color-tech-success: #248a3d;
+  --color-tech-error: #cf222e;
+}
+
+@layer base {
+  body {
+    @apply bg-tech-bg text-tech-ink font-sans antialiased selection:bg-tech-ink selection:text-tech-bg;
+  }
+}
+
+.data-border {
+  @apply border border-tech-line;
+}
+
+.section-label {
+  @apply font-serif italic text-xs opacity-60 uppercase tracking-wider mb-2 block;
+}
+
+.tech-badge {
+  @apply font-mono text-xs px-2 py-1 bg-tech-ink text-tech-bg uppercase border border-tech-line;
+}
+
+.terminal-scroll::-webkit-scrollbar {
+  width: 1px;
+}
+
+.terminal-scroll::-webkit-scrollbar-track {
+  @apply bg-tech-line/10;
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb {
+  @apply bg-tech-line;
+}
+
+

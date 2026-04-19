@@ -1,0 +1,6 @@
+{
+  "name": "Nexus DevOps Pipeline",
+  "description": "A production-grade CI/CD pipeline dashboard featuring real-time build monitoring, containerization orchestration, and automated health checks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
